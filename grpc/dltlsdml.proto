@@ -1,0 +1,23 @@
+syntax = "proto3";
+
+option go_package = "dltlsdml.com/dltlsdml";
+
+package dltlsdml;
+
+// The greeting service definition.
+service Dltlsdml {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+}
+
+// The request message containing the user's name.
+message HelloRequest {
+  string name = 1;
+  string address = 2;
+}
+
+// The response message containing the greetings.
+message HelloReply {
+  string message = 1;
+  string address = 2;
+}
